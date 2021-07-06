@@ -8,7 +8,7 @@ function view_contents(client_pay) {
 		document.getElementById('result_box').style.display = "block";
 		var client_position = get_position(client_pay)
 		document.getElementById('client_position').innerHTML = client_position;
-		setTimeout(function() { move_img(client_position); }, 100);
+		setTimeout(function() { move_img(client_pay); }, 100);
 	} else {
 		alert("월급을 입력하세요.");
 		return 0;

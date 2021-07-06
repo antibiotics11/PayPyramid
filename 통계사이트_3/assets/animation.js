@@ -4,7 +4,17 @@ function delay(n){
     });
 }
 
-async function move_img() {
+function cal_client_pay(client_pay) {
+	if (client_pay >= 1000) {
+		return 10;
+	} else {
+		client_position = (client_pay / 100);
+		return parseInt(client_position);
+	}
+}
+
+async function move_img(client_pay) {
+	client_position = cal_client_pay(client_pay);
 	var x = 1910;
 	var y = 0;
 	for (var i = 10; i >= 1; i--) {
@@ -25,18 +35,15 @@ async function move_img() {
 			animation = "move_" + 5;
 		}
 		await delay(0.35);
-		move_exec(i, x, y, animation); 
+		
+		document.getElementById("moving_man_" + i).style.width = "40px";
+		if (client_position == i) {
+			document.getElementById("moving_man_" + i).src = "./assets/images/man_2.png";
+		} else {
+			document.getElementById("moving_man_" + i).src = "./assets/images/man_1.png";
+		}
+		document.getElementById("moving_man_" + i).style.zIndex = "2";
+		document.getElementById("moving_man_" + i).style.animation = animation + " 1.8s forwards";
 		x -= 4;
 	}
-}
-
-function move_exec(i, x, y, animation) {
-	document.getElementById("moving_man_" + i).style.zIndex = "2";
-	document.getElementById("moving_man_" + i).style.width = "31px";
-	document.getElementById("moving_man_" + i).src = "./assets/images/man.png";
-	document.getElementById("moving_man_" + i).style.animation = animation + " 1.8s forwards";
-}
-
-function set_client_img(client_position) {
-	
 }
