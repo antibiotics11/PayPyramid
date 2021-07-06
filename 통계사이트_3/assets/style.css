@@ -88,6 +88,13 @@ body {
 	#result_statics {
 		float: left;
 		width: 500px;
+		margin-left: 5%;
+		margin-top: 4%;
+		font-size: 120%;
+		background-color: #f1f3f4;
+		border-radius: 40px 40px;
+		padding: 1.7% 1.7% 1.7% 1.7%;
+		color: #4c4c4c;
 	}
 	
 	#result_animation {

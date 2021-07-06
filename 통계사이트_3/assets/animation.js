@@ -43,7 +43,7 @@ async function move_img(client_pay) {
 			document.getElementById("moving_man_" + i).src = "./assets/images/man_1.png";
 		}
 		document.getElementById("moving_man_" + i).style.zIndex = "2";
-		document.getElementById("moving_man_" + i).style.animation = animation + " 1.8s forwards";
+		document.getElementById("moving_man_" + i).style.animation = animation + " 0.8s forwards";
 		x -= 4;
 	}
 }
