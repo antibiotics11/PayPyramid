@@ -51,6 +51,10 @@ body {
 	font-size: 120%;
 }
 
+#result_statics span {
+	color: #6799ff;
+}
+
 #result_bg {
 	float: right;
 	width: 490px;
