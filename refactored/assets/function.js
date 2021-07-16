@@ -1,4 +1,3 @@
-// 입력값 받아서 소득분위 리턴하는 함수
 function get_results(input_pay) {
 	var input_results = 0;
 	
@@ -27,7 +26,6 @@ function get_results(input_pay) {
 	return input_results;
 }
 
-// 입력값이 정수인지 확인하는 함수
 function check_value(input_pay) {
 	if (input_pay) {
 		if (input_pay <= 0 || isNaN(input_pay)) {
@@ -40,7 +38,6 @@ function check_value(input_pay) {
 	}
 }
 
-// 소득분위 출력하고 애니메이션 실행하는 함수
 function view_results(input_pay) {
 	var input_results = get_results(input_pay);
 	document.getElementById('input_results').innerHTML = input_results;
@@ -51,7 +48,6 @@ function view_results(input_pay) {
 	return 0;
 }
 
-// 입력값 확인해서 view_results 함수로 넘기고 화면전환 효과 실행
 $(document).ready(function() {
 	$('#input_ok').click(function() {
 		var input_pay = document.getElementById('input_pay').value;
