@@ -1,9 +1,11 @@
+/* 지연시간 처리하는 함수 */
 function delay(n){
     return new Promise(function(resolve){
         setTimeout(resolve, n * 1000);
     });
 }
 
+/* 월급 입력받아서 1-10 사이 위치 리턴하는 함수 */
 function get_position(input_pay) {
 	if (input_pay >= 1000) {
 		var result_position = 10;
@@ -14,6 +16,7 @@ function get_position(input_pay) {
 	return parseInt(result_position);
 }
 
+/* 애니메이션 실행 */
 async function exe_animation(input_pay) {
 	var result_position = get_position(input_pay);
 	
@@ -32,7 +35,11 @@ async function exe_animation(input_pay) {
 		
 		await delay(0.30);
 		
-		document.getElementById("man_" + i).style.width = "40px";
+		if (screen.width <= 1120) {
+			document.getElementById("man_" + i).style.width = "28px";
+		} else {
+			document.getElementById("man_" + i).style.width = "40px";
+		}
 		if (result_position == i) {
 			document.getElementById("man_" + i).src = "./assets/images/man_2.png";
 		} else {

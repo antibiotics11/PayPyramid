@@ -1,3 +1,17 @@
+// 입력받은 월급이 정수인지 확인 
+function check_value(input_pay) {
+	if (input_pay) {
+		if (input_pay <= 0 || isNaN(input_pay)) {
+			return false;
+		} else {
+			return true;
+		}
+	} else {
+		return false;
+	}
+}
+
+// 통계값 리턴하는 함수 
 function get_results(input_pay) {
 	var input_results = 0;
 	
@@ -26,18 +40,7 @@ function get_results(input_pay) {
 	return input_results;
 }
 
-function check_value(input_pay) {
-	if (input_pay) {
-		if (input_pay <= 0 || isNaN(input_pay)) {
-			return false;
-		} else {
-			return true;
-		}
-	} else {
-		return false;
-	}
-}
-
+// 통계값 받아서 결과페이지에 출력하고 애니메이션 실행 
 function view_results(input_pay) {
 	var input_results = get_results(input_pay);
 	document.getElementById('input_results').innerHTML = input_results;
@@ -48,6 +51,7 @@ function view_results(input_pay) {
 	return 0;
 }
 
+// 월급 입력받으면 입력페이지 가리고 결과페이지 출력 
 $(document).ready(function() {
 	$('#input_ok').click(function() {
 		var input_pay = document.getElementById('input_pay').value;

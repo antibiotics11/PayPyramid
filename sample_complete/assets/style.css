@@ -4,9 +4,10 @@ body {
 	font-family: 'Noto Sans KR', sans-serif;
 }
 
-/* 디스플레이 크기 767픽셀 이하 */
-@media screen and (max-width:767px) {
-	
+/* 모바일 스타일시트 */
+
+@media screen and (max-width:1120px) {
+
 #bg_container {
 	width: 100%;
 }
@@ -14,21 +15,24 @@ body {
 /* result_space 영역 */
 
 #result_statics {
-	margin: 4%;
-	padding: 5%;
-	font-size: 110%;
+	width: 77%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	font-size: 105%;
 	background-color: #f1f3f4;
 	border-radius: 40px 40px;
+	padding: 4.9%;
 	color: #4c4c4c;
 }
 
 #result_title {
 	background-color: #f1f3f4;
-	font-size: 115%;
+	padding-bottom: 15px;
+	font-size: 130%;
 	display: block;
-	width: 96%;
+	width: 100%;
 	text-align: center;
-	padding: 2%;
 }
 
 #input_results {
@@ -40,48 +44,52 @@ body {
 }
 
 #result_bg {
-	width: 100%;
+	width: inherit;
 }
 
 #result_bg img {
-	width: inherit;
+	float: right;
+	height: 650px;
 }
 
 #result_animation {
 	position: absolute;
 	right: 0;
-	padding-right: 5px;
+	margin-right: 5px;
+	padding-top: 600px;
+	overflow: hidden;
 }
 
 @keyframes move_1 {
 	100% {
-		transform: translateY(-62px);
+		transform: translateY(-46px);
 	}
 }
 	
 @keyframes move_2 {
 	100% {
-		transform: translateY(-136px);
+		transform: translateY(-93px);
 	}
 }
 	
 @keyframes move_3 {
 	100% {
-		transform: translateY(-272px);
+		transform: translateY(-193px);
 	}
 }
 	
 @keyframes move_4 {
 	100% {
-		transform: translateY(-434px);
+		transform: translateY(-317px);
 	}
 }
 	
 @keyframes move_5 {
 	100% {
-		transform: translateY(-627px);
+		transform: translateY(-461px);
 	}
 }
+
 
 /* input_space 영역 */
 
@@ -93,15 +101,15 @@ body {
 
 #input_title {
 	display: block;
-	padding-top: 16px; 
-	font-size: 190%; 
+	padding-top: 25px; 
+	font-size: 160%; 
 	color: #4c4c4c;
 }
 
 #input_form {
 	display: inline-block;
-	width: 75%; 
-	height: 75px;
+	height: 85px;
+	width: 86%;
 	padding-top: 10px;
 	background: #4C4C4C;
 }
@@ -110,22 +118,36 @@ body {
 	text-align: left;
 	display: inline-block;
 	margin: 0 auto;
-	width: 65%;
-	height: 65%;
-	font-size: 190%;
+	width: 50%;
+	height: 58px;
+	font-size: 50px;
 	border: none;
 	padding-top: 15px;
 }
 
+#input_txt {
+	display: inline-block;
+	height: 63px;
+	width: 18%; 
+	padding-top: 11px;
+	background-color: white;
+	padding-right: 10px;
+	margin-left: -5px;
+	font-size: 25px;
+	color: #4c4c4c;
+	vertical-align: top;
+}
+
 #input_ok {
 	display: inline-block;
-	height: 75%;
+	width: 15%; 
+	height: 75px;
 	margin: 0; 
 	border: 0;
 	vertical-align: top;
 	background: #4C4C4C;
 	color: white;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: bold;
 	border-radius: 1px #4C4C4C;
 	cursor: pointer;
@@ -150,43 +172,43 @@ input:focus {
 }
 
 #input_bg {
-	position: fixed;
 	text-align: left;
-	z-index: -1;
-	bottom: 0;
 }
 
 #input_bg img {
+	position: fixed;
+	bottom: 39px;
 	width: 95%;
+	z-index: -1;
 }
 
 /* 푸터 영역 */
 
 #bg_footer {
 	background-color: #4c4c4c;
-	padding-top: 1%;
-	padding-left: 3%;
+	padding-top: 10px;
+	padding-left: 14px;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 95px;
-	z-index: 2
+	height: 39px;
+	z-index: 2;
 }
 
 #bg_footer a {
 	color: white;	
 	text-decoration: none;
-	font-family: 'Nanum Gothic', sans-serif;
-	cursor: default;
 }
 
 }
 
-/* 디스플레이 크기 768픽셀 이상 1920픽셀 이하 */
-@media screen and (min-width:768px) and (max-width: 1920px) {
+
+/* 데스크탑 스타일시트 */
+
+@media screen and (min-width: 1121px) {
 
 #bg_container {
-	width: 1920px;
+	width: 100%;
 	height: 920px;
 }
 
@@ -293,11 +315,24 @@ input:focus {
 	text-align: left;
 	display: inline-block;
 	margin: 0 auto;
-	width: auto;
-	height:70px;
+	width: 470px;
+	height: 70px;
 	font-size: 55px;
 	border: none;
 	padding-top: 15px;
+}
+
+#input_txt {
+	display: inline-block;
+	height: 75px;
+	width: 90px; 
+	padding-top: 11px;
+	background-color: white;
+	padding-right: 10px;
+	margin-left: -5px;
+	font-size: 40px;
+	color: #4c4c4c;
+	vertical-align: top;
 }
 
 #input_ok {
@@ -363,8 +398,4 @@ input:focus {
 	cursor: default;
 }
 
-}
-
-/* 디스플레이 크기 1921 픽셀 이상 */
-@media screen and and (min-width: 1921px) {
 }
