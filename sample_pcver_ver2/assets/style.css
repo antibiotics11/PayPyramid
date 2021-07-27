@@ -1,0 +1,172 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 데스크탑 스타일시트 */
+
+@media screen and (min-width: 1121px) {
+
+#bg_container {
+	width: 100%;
+	height: 920px;
+}
+
+/* result_space 영역 */
+
+#result_statics {
+	float: left;
+	width: 500px;
+	margin-left: 5%;
+	margin-top: 4%;
+	font-size: 120%;
+	background-color: #f1f3f4;
+	border-radius: 40px 40px;
+	padding: 2.4% 2.4% 2.4% 2.4%;
+	color: #4c4c4c;
+}
+
+#result_title {
+	background-color: #f1f3f4;
+	font-size: 220%;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+#input_results {
+	font-size: 120%;
+}
+
+#result_statics span {
+	color: #6799ff;
+}
+
+#result_bg {
+	float: right;
+	width: 490px;
+}
+
+#result_bg img {
+	width: inherit;
+}
+
+#result_animation {
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 0;
+}
+
+/* input_space 영역 */
+
+#input_space {
+	display: block;
+	text-align: center;
+	position: relative;
+}
+
+#input_title {
+	display: block;
+	padding-top: 5%; 
+	font-size: 390%; 
+	color: #4c4c4c;
+}
+
+#input_form {
+	display: inline-block;
+	width: 800px; 
+	height: 100px;
+	padding-top: 10px;
+	background: #4C4C4C;
+}
+
+#input_pay {
+	text-align: left;
+	display: inline-block;
+	margin: 0 auto;
+	width: 470px;
+	height: 70px;
+	font-size: 55px;
+	border: none;
+	padding-top: 15px;
+}
+
+#input_txt {
+	display: inline-block;
+	height: 75px;
+	width: 90px; 
+	padding-top: 11px;
+	background-color: white;
+	padding-right: 10px;
+	margin-left: -5px;
+	font-size: 40px;
+	color: #4c4c4c;
+	vertical-align: top;
+}
+
+#input_ok {
+	display: inline-block;
+	width: 80px; 
+	height: 85px;
+	margin: 0; 
+	border: 0;
+	vertical-align: top;
+	background: #4C4C4C;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 1px #4C4C4C;
+	cursor: pointer;
+}
+
+#input_ok:hover {
+	background: #353535;
+	border-radius: 12px 12px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+input:focus {
+	outline: 2px solid #353535;
+}
+
+#input_bg {
+	text-align: left;
+	z-index: -1;
+}
+
+#input_bg img {
+	width: 670px;
+}
+
+/* 푸터 영역 */
+
+#bg_footer {
+	background-color: #4c4c4c;
+	padding-top: 1%;
+	padding-left: 3%;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 35px;
+	z-index: 2;
+}
+
+#bg_footer a {
+	color: white;	
+	text-decoration: none;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 110%;
+	cursor: default;
+}
+
+}
