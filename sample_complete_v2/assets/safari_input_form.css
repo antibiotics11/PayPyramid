@@ -1,0 +1,14 @@
+@media screen and (max-width:1120px) {
+	
+	#input_form {
+		height: 85px;
+		width: 90%;
+	}
+	#input_pay {
+		width: 36%;
+		height: 48px;
+		font-size: 36px;
+		padding-top: 15px;
+		overflow: hidden;
+	}
+}

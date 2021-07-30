@@ -17,6 +17,12 @@
 	<script type = "text/javascript" src = "./assets/jquery-3.4.1.min.js"></script>
 	<script type = "text/javascript" src = "./assets/function.js"></script>
 	<script type = "text/javascript" src = "./assets/animation.js"></script>
+	<script type = "text/javascript">
+		// Safari 전용 input form 스타일시트
+		if (!((navigator.userAgent).indexOf("Chrome") > -1 || (navigator.userAgent).indexOf("rv:") > -1)) {
+			document.write('<link rel = "stylesheet" href = "./assets/safari_input_form.css" />');
+		} 
+	</script>
 </head>
 <body>
 	<div id = "bg_container">
