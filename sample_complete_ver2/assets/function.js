@@ -48,7 +48,7 @@ function view_results(input_pay) {
 		exe_animation(input_pay);
 	}, 220);
 		
-	return 0;
+	return;
 }
 
 // 월급 입력받으면 입력페이지 가리고 결과페이지 출력 
