@@ -26,6 +26,13 @@ body {
 	color: #4c4c4c;
 }
 
+#result_statics img {
+	padding-top: 5px;
+	width: 65px;
+	position: relative; 
+	top: 5px;
+}
+
 #result_title {
 	background-color: #f1f3f4;
 	padding-bottom: 15px;
@@ -200,6 +207,12 @@ input:focus {
 	color: #4c4c4c;
 }
 
+#result_statics img {
+	width: 17%;
+	position: relative; 
+	top: 9px;
+}
+
 #result_title {
 	background-color: #f1f3f4;
 	font-size: 220%;
@@ -348,4 +361,25 @@ input:focus {
 	cursor: default;
 }
 
+}
+
+#bg_footer span {
+	font-family: 'Raleway', sans-serif; 
+	letter-spacing: 3px;
+}
+
+#bg_footer img {
+	width: 16px; 
+	position: relative; 
+	top: 3px;
+}
+
+#reload_btn {
+	font-size: 75%;
+	cursor: pointer;
+}
+
+#reload_btn:hover {
+	position: relative;
+	top: 1px;
 }

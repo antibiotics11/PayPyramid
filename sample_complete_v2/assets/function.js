@@ -1,3 +1,12 @@
+// F12 방지 
+$(document).ready(function(){ 
+	$(document).bind('keydown',function(e){ 
+		if (e.keyCode == 123) { 
+			e.preventDefault(); e.returnValue = false; 
+		} 
+	}); 
+});
+
 // 입력받은 월급이 정수인지 확인 
 function check_value(input_pay) {
 	if (input_pay) {
@@ -51,18 +60,24 @@ function view_results(input_pay) {
 	return;
 }
 
+
 // 월급 입력받으면 입력페이지 가리고 결과페이지 출력 
+function exe_results() {
+	var input_pay = document.getElementById('input_pay').value;
+	if (!check_value(input_pay)) {
+		alert("정확한 값을 입력하세요.");
+	} else {
+		view_results(input_pay);
+		$('#input_space').slideUp( 200 );
+		setTimeout(function() {
+			$('#result_space').slideDown( 300 );
+		}, 200);
+	}
+
+	return;
+}
 $(document).ready(function() {
 	$('#input_ok').click(function() {
-		var input_pay = document.getElementById('input_pay').value;
-		if (!check_value(input_pay)) {
-			alert("정확한 값을 입력하세요.");
-		} else {
-			view_results(input_pay);
-			$('#input_space').slideUp( 200 );
-			setTimeout(function() {
-				$('#result_space').slideDown( 300 );
-			}, 200);
-		}
+		exe_results();
 	});
 });
