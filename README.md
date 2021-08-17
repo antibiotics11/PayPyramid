@@ -4,4 +4,4 @@
 
 https://pay.room9stone.com
 
-웹사이트의 모든 권리는 <a href = "https://www.room9stone.com">room9stone</a>에 귀속됩니다.
+<a href = "https://www.room9stone.com">room9stone</a> 프로젝트 2021
