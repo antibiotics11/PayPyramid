@@ -368,10 +368,9 @@ input:focus {
 	letter-spacing: 3px;
 }
 
-#bg_footer img {
-	width: 16px; 
+#bg_footer img {	
 	position: relative; 
-	top: 3px;
+	bottom: 1px;
 }
 
 #reload_btn {
