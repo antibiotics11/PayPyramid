@@ -27,23 +27,23 @@ function get_results(input_pay) {
 	if (input_pay < 85) {
 		input_results = 100;
 	} else if (85 <= input_pay && input_pay < 150) {
-		input_results = 83.7;
+		input_results = 86.3;
 	} else if (150 <= input_pay && input_pay < 250) {
-		input_results = 72.5;
+		input_results = 76.6;
 	} else if (250 <= input_pay && input_pay < 350) {
-		input_results = 43.6;
+		input_results = 50.3;
 	} else if (350 <= input_pay && input_pay < 450) {
-		input_results = 28.2;
+		input_results = 32.5;
 	} else if (450 <= input_pay && input_pay < 550) {
-		input_results = 18.9;
+		input_results = 22.2;
 	} else if (550 <= input_pay && input_pay < 650) {
-		input_results = 12.8;
+		input_results = 15.4;
 	} else if (650 <= input_pay && input_pay < 800) {
-		input_results = 8.5;
+		input_results = 10.7;
 	} else if (800 <= input_pay && input_pay < 1000) {
-		input_results = 4.5;
+		input_results = 6.0;
 	} else if (1000 <= input_pay) {
-		input_results = 2.2;
+		input_results = 3.1;
 	}
 	
 	return input_results;
