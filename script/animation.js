@@ -51,9 +51,9 @@ async function animation_mobile(input_pay, browser_width) {
 		document.getElementById("man_" + i).style.top = y[i] + "px";
 		document.getElementById("man_" + i).style.left = x[i] + "px";
 		if (get_position(input_pay) == i) {
-			document.getElementById("man_" + i).src = "./assets/images/man_2.png";
+			document.getElementById("man_" + i).src = "image/man_2.png";
 		} else {
-			document.getElementById("man_" + i).src = "./assets/images/man_1.png";
+			document.getElementById("man_" + i).src = "image/man_1.png";
 		}
 	}
 	
@@ -145,9 +145,9 @@ async function animation_desktop(input_pay, browser_width) {
 		document.getElementById("man_" + i).style.top = y[i] + "px";
 		document.getElementById("man_" + i).style.left = x[i] + "px";
 		if (get_position(input_pay) == i) {
-			document.getElementById("man_" + i).src = "./assets/images/man_2.png";
+			document.getElementById("man_" + i).src = "image/man_2.png";
 		} else {
-			document.getElementById("man_" + i).src = "./assets/images/man_1.png";
+			document.getElementById("man_" + i).src = "image/man_1.png";
 		}
 	}
 	
